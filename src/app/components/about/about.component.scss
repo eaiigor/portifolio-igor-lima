@@ -3,15 +3,29 @@
 }
 
 .about__py-3 {
-    padding: 5rem 0 5rem 0;
+    padding: 4rem 0 4rem 0;
 }
 
 .about__h3 {
+    font-weight: 500;  
+}
+
+.about__h4 {
     color: #2978b5;
-    font-weight: 600;  
 }
 
 .about__h5 {
-    color: #2978b5;
     font-style: italic; 
+}
+
+.abour__card {
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 2rem;
+    transition: 0.3s;
+}
+
+.abour__card:hover {
+    background-color: #f7f7f7;
+    color: #363636;
 }
