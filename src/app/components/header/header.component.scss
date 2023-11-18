@@ -1,5 +1,59 @@
 .header__logo {
     font-weight: 700;
     color: #2978b5;
-    font-size: 30px;
+    font-size: 26px;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.header__logo:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: #2978b5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header__logo:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+ul { 
+    list-style: none;
+}
+
+li:hover {
+    color: #2978b5;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #2978b5;
+    padding-bottom: 4px;
+}
+  
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #2978b5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
