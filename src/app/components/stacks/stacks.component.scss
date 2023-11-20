@@ -1,0 +1,18 @@
+.stacks_py-3 {
+    padding: 3rem 0 3rem 0;
+}
+
+.stacks-column {
+    width: 50%;
+  }
+  
+  .stacks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
+    gap: 10px; /* Espaçamento entre as tags <i> */
+  }
+  
+  /* Estilos adicionais para os ícones, se necessário */
+  .stacks-grid i {
+    /* Estilos dos ícones */
+  }
