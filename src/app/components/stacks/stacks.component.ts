@@ -8,18 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class StacksComponent implements OnInit {
 
   ngOnInit(): void {
-    const icons = document.querySelectorAll('.fs-32');
+    const iconContainers = document.querySelectorAll('.stacks-grid > div');
     const description = document.getElementById('description');
 
-    icons.forEach(icon => {
-      icon.addEventListener('mouseover', () => {
-        const iconDescription = icon.getAttribute('data-description');
-        if (description) {
-          description.textContent = iconDescription || '';
+    iconContainers.forEach(container => {
+      container.addEventListener('mouseover', () => {
+        const fs32Element = container.querySelector('.fs-32');
+        if (fs32Element) {
+          const iconDescription = fs32Element.getAttribute('data-description');
+          if (description) {
+            description.textContent = iconDescription || '';
+          }
         }
       });
 
-      icon.addEventListener('mouseout', () => {
+      container.addEventListener('mouseout', () => {
         if (description) {
           description.textContent = '*passe o cursor do mouse no card para ler*';
         }

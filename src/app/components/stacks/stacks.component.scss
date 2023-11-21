@@ -1,18 +1,40 @@
+.fs-32 {
+  font-size: 54px;
+}
+
 .stacks_py-3 {
     padding: 3rem 0 3rem 0;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .stacks-column {
     width: 50%;
-  }
+}
   
-  .stacks-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
-    gap: 10px; /* Espaçamento entre as tags <i> */
-  }
+.stacks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
+  gap: 16px; /* Espaçamento entre as tags <i> */
+}
   
-  /* Estilos adicionais para os ícones, se necessário */
-  .stacks-grid i {
-    /* Estilos dos ícones */
-  }
+/* Estilos adicionais para os ícones, se necessário */
+.stacks-grid div {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  color: #2978b5;
+  transition: 1s;
+}
+
+.stacks-grid div:hover {
+  border: 1px solid #308ed6;
+  background-color: #f7f7f7;
+
+}
