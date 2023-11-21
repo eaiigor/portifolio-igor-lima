@@ -6,18 +6,23 @@
     padding: 3rem 0 3rem 0;
 }
 
+.pl-5 {
+  padding-left: 3rem;
+}
+
 .text-justify {
   text-align: justify;
 }
 
 .stacks-column {
-    width: 50%;
+  width: 50%;
 }
   
 .stacks-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
-  gap: 16px; /* Espaçamento entre as tags <i> */
+  gap: 14px; /* Espaçamento entre as tags <i> */
+  justify-items: center;
 }
   
 /* Estilos adicionais para os ícones, se necessário */
@@ -35,6 +40,6 @@
 
 .stacks-grid div:hover {
   border: 1px solid #308ed6;
-  background-color: #f7f7f7;
+  background-color: #eaf6ff;
 
 }
