@@ -1,19 +1,13 @@
-<div class="container mx-wd d-flex align-items-center justify-content-between mt-5">
-    <div>
-        <h4 class="header__logo">IL.</h4>
+<header class="app-header" [ngClass]="{ 'scrolled': isScrolled }">
+    <div class="container mx-wd d-flex align-items-center justify-content-between mt-3">
+        <div>
+            <h4 class="header__logo" (click)="scrollToTop()">IL.</h4>
+        </div>
+        <ul class="d-flex gap-3">
+            <li><a (click)="scrollTo('about')">Sobre</a></li>
+            <li><a (click)="scrollTo('stacks')">Conhecimentos</a></li>
+            <li><a (click)="scrollTo('experience')">Experiência</a></li>
+            <li><a (click)="scrollTo('contact')">Contato</a></li>
+        </ul>
     </div>
-    <ul class="d-flex gap-3">
-        <li>
-            <a>Sobre</a>
-        </li>
-        <li>
-            <a>Stacks</a>
-        </li>
-        <li>
-            <a>Experiência</a>
-        </li>
-        <li>
-            <a>Contato</a>
-        </li>
-    </ul>
-</div>
+</header>

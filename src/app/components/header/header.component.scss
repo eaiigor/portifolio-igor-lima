@@ -1,59 +1,74 @@
-.header__logo {
-    font-weight: 700;
-    color: #2978b5;
-    font-size: 26px;
-    position: relative;
-    padding-bottom: 4px;
-}
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white; /* Adicione um fundo, se necessário */
 
-.header__logo:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    left: 50%;
-    position: absolute;
-    background: #2978b5;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.header__logo:hover:after { 
-    width: 100%; 
-    left: 0; 
-}
-
-ul { 
-    list-style: none;
-}
-
-li:hover {
-    color: #2978b5;
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    position: relative;
-    color: #2978b5;
-    padding-bottom: 4px;
-}
-  
-a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #2978b5;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-a:hover:after { 
-    width: 100%; 
-    left: 0; 
+    &.scrolled {
+        background-color: rgb(255 255 255 / 23%); /* Fundo transparente com opacidade */
+    backdrop-filter: blur(5px); /* Adiciona o efeito de desfoque */
+    }
+    
+    .header__logo {
+        font-weight: 700;
+        color: #2978b5;
+        font-size: 26px;
+        position: relative;
+        padding-bottom: 4px;
+        cursor: pointer;
+    }
+    
+    .header__logo:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: #2978b5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    
+    .header__logo:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+    
+    ul { 
+        list-style: none;
+    }
+    
+    li:hover {
+        color: #2978b5;
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+        position: relative;
+        color: #2978b5;
+        padding-bottom: 4px;
+    }
+      
+    a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #2978b5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    
+    a:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
 }

@@ -17,14 +17,17 @@ export class StacksComponent implements OnInit {
         if (fs32Element) {
           const iconDescription = fs32Element.getAttribute('data-description');
           if (description) {
+          description.classList.remove('animate__animated','animate__fadeIn');
+          description.classList.add('animate__animated','animate__fadeIn');
             description.textContent = iconDescription || '';
           }
         }
       });
-
+      
       container.addEventListener('mouseout', () => {
         if (description) {
-          description.textContent = '*passe o cursor do mouse no card para ler*';
+          description.classList.remove('animate__animated','animate__fadeIn');
+          description.textContent = '*passe o cursor do mouse no card para ler*'; 
         }
       });
     });
