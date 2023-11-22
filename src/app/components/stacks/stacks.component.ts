@@ -27,7 +27,7 @@ export class StacksComponent implements OnInit {
       container.addEventListener('mouseout', () => {
         if (description) {
           description.classList.remove('animate__animated','animate__fadeIn');
-          description.textContent = '*passe o cursor do mouse no card para ler*'; 
+          description.textContent = '*passe o cursor do mouse no card para ler*';
         }
       });
     });
