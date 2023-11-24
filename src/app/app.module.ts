@@ -10,6 +10,7 @@ import { StacksComponent } from './components/stacks/stacks.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
