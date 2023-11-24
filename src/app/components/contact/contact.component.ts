@@ -36,7 +36,7 @@ export class ContactComponent {
       message: this.form.value.message,
     });
 
-    this.toastr.success('Sucesso!', 'E-mail enviado com sucesso');
+    this.toastr.success('Sucesso! E-mail enviado ✉️');
     this.form.reset();
   }
 

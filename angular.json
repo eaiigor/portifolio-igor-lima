@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "portifolio-igor-lima:build:production"
+              "buildTarget": "portifolio-igor-lima:build:production"
             },
             "development": {
-              "browserTarget": "portifolio-igor-lima:build:development"
+              "buildTarget": "portifolio-igor-lima:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "portifolio-igor-lima:build"
+            "buildTarget": "portifolio-igor-lima:build"
           }
         },
         "test": {
