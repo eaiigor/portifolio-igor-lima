@@ -30,7 +30,7 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule, // required animations module
+    BrowserAnimationsModule,
     ToastrModule.forRoot(),
   ],
   providers: [],

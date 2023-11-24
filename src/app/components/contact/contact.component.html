@@ -12,7 +12,7 @@
                     <div class="mb-3">
                         <input type="text" class="form-control" placeholder="Nome" formControlName="from_name" [ngClass]="{ 'is-invalid': isFieldInvalid('from_name') && isFieldTouched('from_name') }">
                         <div *ngIf="isFieldInvalid('from_name') && isFieldTouched('from_name')" class="text-danger">
-                            O nome é obrigatório.
+                            Campo obrigatório.
                         </div>
                     </div>
                     <div class="mb-3">
@@ -25,13 +25,13 @@
                     <div class="mb-3">
                         <input type="text" class="form-control" placeholder="Assunto" formControlName="subject" [ngClass]="{ 'is-invalid': isFieldInvalid('subject') && isFieldTouched('subject') }">
                         <div *ngIf="isFieldInvalid('subject') && isFieldTouched('subject')" class="text-danger">
-                            O assunto é obrigatório.
+                            Campo obrigatório.
                         </div>
                     </div>
                     <div class="mb-3">
                         <textarea class="form-control" rows="5" placeholder="Mensagem" formControlName="message" [ngClass]="{ 'is-invalid': isFieldInvalid('message') && isFieldTouched('message') }"></textarea>
                         <div *ngIf="isFieldInvalid('message') && isFieldTouched('message')" class="text-danger">
-                            A mensagem é obrigatória.
+                            Campo obrigatório.
                         </div>
                     </div>
                     <button (click)="sendEmail()" type="submit" class="btn btn-primary">Enviar</button>
