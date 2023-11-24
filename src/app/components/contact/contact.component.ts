@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs  from '@emailjs/browser';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -17,7 +18,7 @@ export class ContactComponent {
     message: ['', Validators.required],
   })
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 
   async sendEmail() {
     if (!this.form.valid) {
@@ -35,7 +36,7 @@ export class ContactComponent {
       message: this.form.value.message,
     });
 
-    alert('Email enviado.');
+    this.toastr.success('Sucesso!', 'E-mail enviado com sucesso');
     this.form.reset();
   }
 
