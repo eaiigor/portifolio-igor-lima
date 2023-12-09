@@ -1,5 +1,5 @@
 .experience_py-3 {
-    padding: 3rem 0 3rem 0;
+    padding: 3rem 1rem 3rem 1rem;
 }
 
 .w-20 {
@@ -17,3 +17,38 @@
 .mt-4 {
     margin-top: 4rem;
 }
+
+.list-group {
+    border-radius: 0;
+}
+
+.list-group-item.active {
+    border-left: solid 5px #2978b5 !important;
+    border: solid 1px #dee2e6;
+    color: #2978b5;
+    background-color: #f8f9fa;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .w-20,
+    .w-80 {
+      width: 100%;
+    }
+  
+    .list-group {
+      flex-direction: column;
+    }
+    
+    .list-group-item {
+      text-align: center; 
+    }
+
+    .flex-responsive {
+        flex-direction: column;
+    }
+
+    .responsive-titles {
+        flex-direction: column !important;
+    }
+  }
