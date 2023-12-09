@@ -41,3 +41,17 @@
   border: 1px solid #308ed6;
   background-color: #eaf6ff;
 }
+
+@media screen and (max-width: 767px) {
+  .description {
+    display: none;
+  }
+  
+  .stacks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .d-flex {
+    justify-content: center !important;
+  }
+}
