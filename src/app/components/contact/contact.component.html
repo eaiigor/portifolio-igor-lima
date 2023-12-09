@@ -7,7 +7,7 @@
                 <img src="assets/undraw_mailbox_re_dvds.svg" alt="email-box">
             </div>
         
-            <div class="pl-4 contact__form w-100">
+            <div class="ml-4 contact__form w-100 responsive-ml-4">
                 <form>
                     <div class="mb-3">
                         <input type="text" class="form-control" placeholder="Nome" formControlName="from_name" [ngClass]="{ 'is-invalid': isFieldInvalid('from_name') && isFieldTouched('from_name') }">
@@ -34,14 +34,16 @@
                             Campo obrigatório.
                         </div>
                     </div>
-                    <button (click)="sendEmail()" type="submit" class="btn btn-primary">Enviar</button>
-                    <div class="d-flex justify-content-between align-items-center w-100 mt-4">
-                        <div>
-                            <i class="mdi mdi-email"> contatoigorrochalima&#64;hotmail.com</i>
-                        </div>
-                        
-                        <div>
-                            <i class="mdi mdi-whatsapp">+55 (35) 9 8432-5075</i>
+                    <div class="responsive-send-section">
+                        <button (click)="sendEmail()" type="submit" class="btn btn-primary">Enviar</button>
+                        <div class="d-flex justify-content-between align-items-center w-100 mt-4 responsive-contact">
+                            <div>
+                                <i class="mdi mdi-email"> contato&#64;igorlima.dev</i>
+                            </div>
+                            
+                            <div>
+                                <i class="mdi mdi-whatsapp">+55 (35) 9 8432-5075</i>
+                            </div>
                         </div>
                     </div>
                 </form>

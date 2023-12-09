@@ -2,7 +2,7 @@
     padding: 8rem 0 12rem 0;
 }
 
-.pl-4 {
+.ml-4 {
     margin-left: 4rem;
 }
 
@@ -18,5 +18,26 @@
     .form-control {
       margin-bottom: 15px;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__svg {
+    display: none;
+  }
+  
+  .responsive-ml-4 {
+    margin-left: 0 !important;
+  }
+
+  .responsive-contact {
+    flex-direction: column;
+    margin-top: 0!important;
+    align-items: end!important;
+  }
+
+  .responsive-send-section {
+    display: flex;
+    justify-content: space-between;
   }
 }
