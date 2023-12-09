@@ -20,12 +20,11 @@
   
 .stacks-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
-  gap: 14px; /* Espaçamento entre as tags <i> */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
   justify-items: center;
 }
   
-/* Estilos adicionais para os ícones, se necessário */
 .stacks-grid div {
   width: 8rem;
   height: 8rem;
