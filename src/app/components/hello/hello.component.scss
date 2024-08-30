@@ -31,12 +31,71 @@
   font-weight: 700;
 }
 
+/* Animação de digitação */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-o-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 100%;
+  }
+}
+
+/* Animação do cursor piscando */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(116, 127, 224, 0.65);
+  }
+}
+
+@-moz-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(116, 127, 224, 0.65);
+  }
+}
+
+@-o-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(116, 127, 224, 0.65);
   }
 }
 
