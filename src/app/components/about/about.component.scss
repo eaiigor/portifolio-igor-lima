@@ -1,19 +1,92 @@
-.text-justify {
-    text-align: justify;
+.about__terminal {
+  .about__terminal__header {
+    height: 28px;
+    background-color: #e4e3e5;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .about__terminal__buttons {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-left: 9px;
+    }
+
+    .red {
+      background-color: #f96256;
+      border: 1px solid #f65549;
+    }
+
+    .yellow {
+      background-color: #fdbc3d;
+      border: 1px solid #ffb524;
+    }
+
+    .green {
+      background-color: #33c948;
+      border: 1px solid #2dbb41;
+    }
+  }
+
+  .about__terminal__window {
+    background-color: #5a5d7a;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
+      0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+    font-family: "Chakra Petch", sans-serif !important;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+
+    .about__terminal__block {
+      margin-bottom: 25px;
+      margin-left: 35px;
+      margin-right: 35px;
+      line-height: 24px;
+
+      .about__terminal__response {
+        color: #e7d184;
+      }
+
+      a {
+        text-decoration: none;
+        color: #35feff;
+        transition: 0.2s ease-in-out;
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
-.about__py-3 {
-    padding: 3rem 1rem 3rem 1rem;
+.terminar__bar {
+  font-weight: 400;
+  max-width: 1.3em;
+  overflow: hidden;
+  border-right: 0.5em solid hsla(0,0%,97%,.65);
+  white-space: nowrap;
+  animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
 }
 
-.about__h3 {
-    font-weight: 500;  
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-.about__h4 {
-    color: #2978b5;
-}
-
-.about__h5 {
-    font-style: italic; 
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: hsla(0,0%,97%,.65);
+  }
 }

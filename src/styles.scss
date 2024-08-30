@@ -5,15 +5,36 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Inconsolata', sans-serif ;
     font-weight: 500;
-    color: #555;
+    color: #525f7f;
+    background-color: #f6f9fc;
 }
 
 .mx-wd {
     max-width: 1100px;
 }
 
+.title_c {
+    color: #747fe0;
+    font-weight: 500;
+    font-size: 2.2rem;
+
+}
+
 .py-3 {
     padding: 3rem 1rem 3rem 1rem !important; 
+}
+
+.py-8 {
+    padding: 8rem 14px;
+}
+
+.form-control:focus {
+    border-color: #c2c8fa !important;
+    box-shadow: 0 0 0 .25rem rgb(94 20 241 / 25%);
+}
+
+.mt-6 {
+    margin-top: 6rem;
 }

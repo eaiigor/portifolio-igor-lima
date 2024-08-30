@@ -21,6 +21,22 @@
   }
 }
 
+.ct__btn {
+    background-color: #a4abe9;
+    border: 1px solid #fff;
+    text-decoration: none !important;
+    padding: 6px 10px;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .25s;
+    min-width: 7rem;
+}
+
+.ct__btn:hover {
+  filter: brightness(110%);
+}
+
 @media screen and (max-width: 767px) {
   .contact__svg {
     display: none;
