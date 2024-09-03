@@ -3,11 +3,48 @@
   margin: 0;
 }
 
+:root {
+  --body: #f6f9fc;
+  --text-title: #747fe0;
+  --text-body: #525f7f;
+
+  --bg-terminal-bar: #e4e3e5;
+  --bg-terminal: #5a5d7a;
+  --box-shadow-terminal: 0 50px 100px rgba(50, 50, 93, 0.15),
+    0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+  --typing-hello: rgba(116, 127, 224, 0.65);
+
+  --bg-btn: #a4abe9;
+
+  --bg-experience-btn: #e9ecfd;
+  --bar-experience-btn: #dddddd;
+
+  --bg-input: rgb(217 217 217 / 13%);
+}
+
+:root .dark-theme {
+  --body: #101214;
+  --text-title: #efc480;
+  --text-body: #efefef;
+
+  --bg-terminal: #0c0c0c;
+  --bg-terminal-bar: #3f4143;
+  --box-shadow-terminal: none;
+  --typing-hello: rgba(224, 204, 116, 0.65);
+
+  --bg-btn: #8d7a41;
+
+  --bg-experience-btn: #2f2f2f;
+  --bar-experience-btn: #555555;
+
+  --bg-input: rgb(47 47 47 / 13%);
+}
+
 body {
   font-family: "Inconsolata", sans-serif;
   font-weight: 500;
-  color: #525f7f;
-  background-color: #f6f9fc;
+  color: var(--text-body);
+  background-color: var(--body);
 }
 
 .mx-wd {
@@ -15,7 +52,7 @@ body {
 }
 
 .title_c {
-  color: #747fe0;
+  color: var(--text-title);
   font-weight: 500;
   font-size: 2.2rem;
 }
@@ -28,13 +65,28 @@ body {
   padding: 8rem 14px;
 }
 
-.form-control:focus {
-  border-color: #c2c8fa !important;
-  box-shadow: 0 0 0 0.25rem rgb(94 20 241 / 25%);
-}
-
 .mt-6 {
   margin-top: 6rem;
+}
+
+.form-control {
+  color: var(--text-body);
+  background-color: var(--bg-input);
+  border: none;
+  border-bottom: var(--text-title) solid 1px;
+  border-radius: 0;
+}
+
+.form-control::placeholder {
+  color: var(--text-body);
+}
+
+.form-control:focus {
+  color: var(--text-body);
+  background-color: var(--bg-input);
+  border-bottom: var(--text-title) solid 1px;
+  outline: 0;
+  box-shadow: none;
 }
 
 @keyframes typing {
@@ -52,7 +104,7 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: hsla(0, 0%, 97%, 0.65);
+    border-color: rgba(252, 252, 252, 0.65);
   }
 }
 
@@ -62,6 +114,6 @@ body {
     border-color: transparent;
   }
   50% {
-    border-color: rgba(116, 127, 224, 0.65);
+    border-color: var(--typing-hello);
   }
 }

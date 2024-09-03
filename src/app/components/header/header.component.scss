@@ -18,23 +18,31 @@
     }
 
     &.scrolled {
-        background-color: rgb(255 255 255 / 23%) !important;
+        background-color: rgb(255 255 255 / 2%) !important;
         backdrop-filter: blur(5px);
     }
 
     ul {
         list-style: none;
+
+        i {
+            font-size: 1.7rem;
+        }
+    }
+
+    li {
+        transition:  0.2s ease ;
     }
 
     li:hover {
-        color: #747fe0;
+        color: var(--text-title);
         cursor: pointer;
     }
 
     a {
         text-decoration: none;
         position: relative;
-        color: #747fe0;
+        color: var(--text-title);
         padding-bottom: 4px;
         font-size: 22px;
         font-weight: 300;
@@ -48,7 +56,7 @@
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #747fe0;
+        background: var(--text-title);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }

@@ -7,8 +7,10 @@
 }
 
 .contact__svg {
+  display: flex;
+
   img {
-    width: 20vw; 
+    width: 22vw; 
     height: auto;
   }
 }
@@ -22,8 +24,8 @@
 }
 
 .ct__btn {
-    background-color: #a4abe9;
-    border: 1px solid #fff;
+    background-color: var(--bg-btn);
+    border: 1px solid var(--bar-experience-btn);
     text-decoration: none !important;
     padding: 6px 10px;
     color: white;

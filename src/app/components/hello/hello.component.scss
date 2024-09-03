@@ -1,12 +1,11 @@
 .hello__name {
   font-size: 5.5em;
-  color: #747fe0;
   font-weight: 400;
   margin-top: 14rem;
   max-width: 33rem;
-
+  color: var(--text-title);
   overflow: hidden;
-  border-right: 0.1em solid rgba(116, 127, 224, 0.65);
+  border-right: 0.1em solid rgba(144, 153, 238, 0.65);
   white-space: nowrap;
   width: 0;
   animation: typing 3.5s steps(30, end) 1s forwards, blink-caret-hello 1s step-end infinite;
@@ -14,7 +13,6 @@
 
 .hello__sub {
   font-size: 2em;
-  color: #acb3f5;
   font-weight: 300;
   font-style: italic;
 }
@@ -22,13 +20,12 @@
 .hello__p {
   font-weight: 400;
   font-size: 1.3em;
-  color: #525f7f;
   text-align: justify;
 }
 
 .hello__span {
-  color: #747fe0;
   font-weight: 700;
+  color: var(--text-title);
 }
 
 @media screen and (max-width: 767px) {

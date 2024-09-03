@@ -7,9 +7,11 @@ import { Component, HostListener, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent {
-  isScrolled = false;
+  isScrolled = true;
 
-  @HostListener('window:scroll', [])
+  logo = 'light';
+
+/*   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollY = window.scrollY;
     if (scrollY > 100) {
@@ -17,7 +19,7 @@ export class HeaderComponent {
     } else {
       this.isScrolled = false;
     }
-  }
+  } */
 
   scrollTo(elementId: string): void {
     const element = document.getElementById(elementId);
@@ -28,5 +30,15 @@ export class HeaderComponent {
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  changeTheme() {
+    const darkTheme = document.body.classList.toggle('dark-theme');
+
+    if (darkTheme) {
+      return (this.logo = 'dark');
+    }
+
+    return (this.logo = 'light');
   }
 }

@@ -19,7 +19,7 @@
      
         
         .mp__title {
-            color: #747fe0;
+            color: var(--text-title);
             font-weight: 400;
             font-size: 2rem;
         }
@@ -27,7 +27,6 @@
         .mp__text {
             font-weight: 400;
             font-size: 1.2em;
-            color: #525f7f;
         }
 
         .mp__tecnologies {
@@ -37,8 +36,8 @@
             justify-content: flex-start;
             
             span {
-                border: 1px solid #6c78e3;
-                color: #6c78e3;
+                border: 1px solid var(--text-title);
+                color: var(--text-title);
                 border-radius: 4px;
                 padding: 5px 10px;
                 font-size: 1.1rem;
@@ -52,8 +51,8 @@
             gap: 2rem;
 
             a {
-                background-color: #a4abe9;
-                border: 1px solid #b8bef1;
+                background-color: var(--bg-btn);
+                border: 1px solid var(--bg-btn);
                 text-decoration: none !important;
                 padding: 6px 10px;
                 color: white;
@@ -64,7 +63,7 @@
 
             a:hover {
                 background-color: #ffffff00;
-                color: #a4abe9;
+                color: var(--bg-btn);
             }
         }
     }

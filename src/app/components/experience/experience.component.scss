@@ -22,21 +22,21 @@
 .list-group-item {
     background-color: #ffffff00;
     border: none;
-    color: #5963c2;
+    color: var(--text-title);
     font-weight: 400;
-    border-left: solid 2px #dddddd;
+    border-left: solid 2px var(--bar-experience-btn);
     font-size: 20px;
     transition: 0.3s ease-in-out, filter 0.2s ease-in-out;
 }
 
 .list-group-item:hover {
-    background-color: #e9ecfd;
+    background-color: var(--bg-experience-btn);
 }
 
 .list-group-item.active {
-    border-left: solid 2px #747fe0 !important;
-    color: #747fe0;
-    background-color: #e9ecfd;
+    border-left: solid 2px var(--text-title) !important;
+    color: var(--text-title);
+    background-color: var(--bg-experience-btn);
     border-radius: 0;
 }
 
@@ -47,7 +47,7 @@
 .exp__link {
     text-decoration: none;
     font-size: 22px;
-    color: #747fe0;
+    color: var(--text-title);
     transition: 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
