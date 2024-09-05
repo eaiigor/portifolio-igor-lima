@@ -1,68 +1,78 @@
 .app-header {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0 2rem;
+
+  .header__logo {
+    width: 84px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .header__logo:hover {
+    transform: scale(1.1);
+  }
+
+  &.scrolled {
+    background-color: rgb(255 255 255 / 2%) !important;
+    backdrop-filter: blur(5px);
+  }
+
+  ul {
+    list-style: none;
+
+    i {
+      font-size: 1.7rem;
+    }
+  }
+
+  li {
+    transition: 0.2s ease;
+
+    img {
+      width: 2rem;
+      padding-top: 6px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  li:hover {
+    color: var(--text-title);
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    position: relative;
+    color: var(--text-title);
+    padding-bottom: 4px;
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--text-title);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  a:hover:after {
+    width: 100%;
     left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 0 2rem;
-
-    .header__logo {
-        width: 84px;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .header__logo:hover {
-        transform: scale(1.1);
-    }
-
-    &.scrolled {
-        background-color: rgb(255 255 255 / 2%) !important;
-        backdrop-filter: blur(5px);
-    }
-
-    ul {
-        list-style: none;
-
-        i {
-            font-size: 1.7rem;
-        }
-    }
-
-    li {
-        transition:  0.2s ease ;
-    }
-
-    li:hover {
-        color: var(--text-title);
-        cursor: pointer;
-    }
-
-    a {
-        text-decoration: none;
-        position: relative;
-        color: var(--text-title);
-        padding-bottom: 4px;
-        font-size: 22px;
-        font-weight: 300;
-    }
-
-    a:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: var(--text-title);
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-    }
-
-    a:hover:after {
-        width: 100%;
-        left: 0;
-    }
+  }
 }

@@ -6,13 +6,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="place-content: end;">
-      <ul class="navbar-nav gap-5 mb-2 mb-lg-0">
-        <li><a (click)="scrollTo('about')">Sobre</a></li>
+      <ul class="navbar-nav gap-4 mb-2 mb-lg-0">
+        <li><a (click)="scrollTo('about')">{{ 'header.about' | translate }}</a></li>
         <!-- <li><a (click)="scrollTo('stacks')">Conhecimentos</a></li> -->
-        <li><a (click)="scrollTo('my-projects')">Projetos</a></li>
-        <li><a (click)="scrollTo('experience')">Experiência</a></li>
-        <li><a (click)="scrollTo('contact')">Contato</a></li>
+        <li><a (click)="scrollTo('my-projects')">{{ 'header.projects' | translate }}</a></li>
+        <li><a (click)="scrollTo('experience')">{{ 'header.experience' | translate }}</a></li>
+        <li><a (click)="scrollTo('contact')">{{ 'header.contact' | translate }}</a></li>
         <li (click)="changeTheme()"><i class="mdi mdi-theme-light-dark"></i></li>
+        <li (click)="switchLanguage()"><img src="assets/{{ flag }}.svg" alt="country-flag"></li>
       </ul>
     </div>
   </div>

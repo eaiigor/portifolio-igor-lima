@@ -1,4 +1,5 @@
 import { Component, HostListener, ViewEncapsulation } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -10,16 +11,22 @@ export class HeaderComponent {
   isScrolled = true;
 
   logo = 'light';
+  flag = 'en-us'
 
-/*   @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const scrollY = window.scrollY;
-    if (scrollY > 100) {
-      this.isScrolled = true;
-    } else {
-      this.isScrolled = false;
-    }
-  } */
+  /*   @HostListener('window:scroll', [])
+    onWindowScroll() {
+      const scrollY = window.scrollY;
+      if (scrollY > 100) {
+        this.isScrolled = true;
+      } else {
+        this.isScrolled = false;
+      }
+    } */
+
+  constructor(private translate: TranslateService) {
+    // Define o idioma padrão como português
+    translate.setDefaultLang('pt');
+  }
 
   scrollTo(elementId: string): void {
     const element = document.getElementById(elementId);
@@ -40,5 +47,17 @@ export class HeaderComponent {
     }
 
     return (this.logo = 'light');
+  }
+
+  switchLanguage() {
+    const currentLang = this.translate.currentLang;
+    this.translate.use(currentLang === 'en' ? 'pt' : 'en');
+    
+    if (this.translate.currentLang === 'en') {
+      
+      return (this.flag = 'pt-br');
+    }
+
+    return (this.flag = 'en-us');
   }
 }
