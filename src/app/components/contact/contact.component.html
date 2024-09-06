@@ -1,45 +1,43 @@
 <div class="container mx-wd" py-8 [formGroup]="form">
     <div class="d-flex flex-column justify-content-between align-items-center contact_py-3 w-100">
-        <h3 class="title_c">&lt;contato /&gt;</h3>
+        <h3 class="title_c">&lt;{{ 'contact.title' | translate }} /&gt;</h3>
         <div class="d-flex justify-content-between w-100 mt-6">
             <div class="contact__svg">
-                <img src="assets/undraw_coding_re_iv62.svg" alt="email-box">
+                <img src="assets/undraw_coding_re_iv62.svg" alt="{{ 'contact.emailAltText' | translate }}">
             </div>
         
             <div class="ml-4 contact__form w-100 responsive-ml-4">
                 <form>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Nome" formControlName="from_name" [ngClass]="{ 'is-invalid': isFieldInvalid('from_name') && isFieldTouched('from_name') }">
+                        <input type="text" class="form-control" placeholder="{{ 'contact.namePlaceholder' | translate }}" formControlName="from_name" [ngClass]="{ 'is-invalid': isFieldInvalid('from_name') && isFieldTouched('from_name') }">
                         <div *ngIf="isFieldInvalid('from_name') && isFieldTouched('from_name')" class="text-danger">
-                            Campo obrigatório.
+                            {{ 'contact.nameRequired' | translate }}
                         </div>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email" formControlName="from_email" [ngClass]="{ 'is-invalid': isFieldInvalid('from_email') && isFieldTouched('from_email') }">
+                        <input type="email" class="form-control" placeholder="{{ 'contact.emailPlaceholder' | translate }}" formControlName="from_email" [ngClass]="{ 'is-invalid': isFieldInvalid('from_email') && isFieldTouched('from_email') }">
                         <div *ngIf="isFieldInvalid('from_email') && isFieldTouched('from_email')" class="text-danger">
-                            Por favor, insira um email válido.
+                            {{ 'contact.emailInvalid' | translate }}
                         </div>
-
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Assunto" formControlName="subject" [ngClass]="{ 'is-invalid': isFieldInvalid('subject') && isFieldTouched('subject') }">
+                        <input type="text" class="form-control" placeholder="{{ 'contact.subjectPlaceholder' | translate }}" formControlName="subject" [ngClass]="{ 'is-invalid': isFieldInvalid('subject') && isFieldTouched('subject') }">
                         <div *ngIf="isFieldInvalid('subject') && isFieldTouched('subject')" class="text-danger">
-                            Campo obrigatório.
+                            {{ 'contact.subjectRequired' | translate }}
                         </div>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" rows="5" placeholder="Mensagem" formControlName="message" [ngClass]="{ 'is-invalid': isFieldInvalid('message') && isFieldTouched('message') }"></textarea>
+                        <textarea class="form-control" rows="5" placeholder="{{ 'contact.messagePlaceholder' | translate }}" formControlName="message" [ngClass]="{ 'is-invalid': isFieldInvalid('message') && isFieldTouched('message') }"></textarea>
                         <div *ngIf="isFieldInvalid('message') && isFieldTouched('message')" class="text-danger">
-                            Campo obrigatório.
+                            {{ 'contact.messageRequired' | translate }}
                         </div>
                     </div>
                     <div class="responsive-send-section">
-                        <button (click)="sendEmail()" type="submit" class="ct__btn">Enviar <i class="mdi mdi-check"></i></button>
+                        <button (click)="sendEmail()" type="submit" class="ct__btn">{{ 'contact.sendButton' | translate }} <i class="mdi mdi-check"></i></button>
                         <div class="d-flex justify-content-between align-items-center w-100 mt-4 responsive-contact">
                             <div>
                                 <i class="mdi mdi-email"> contato&#64;igorlima.dev</i>
                             </div>
-                            
                             <div>
                                 <i class="mdi mdi-whatsapp">+55 (35) 9 8432-5075</i>
                             </div>
@@ -48,6 +46,5 @@
                 </form>
             </div>
         </div>
-
     </div>
-  </div>
+</div>

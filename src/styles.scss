@@ -20,6 +20,8 @@
   --bar-experience-btn: #dddddd;
 
   --bg-input: rgb(217 217 217 / 13%);
+
+  --bg-toggle-bar-btn: #ffffff00;
 }
 
 :root .dark-theme {
@@ -38,6 +40,8 @@
   --bar-experience-btn: #555555;
 
   --bg-input: rgb(47 47 47 / 13%);
+  
+  --bg-toggle-bar-btn: #ffffff26;
 }
 
 body {
@@ -87,6 +91,10 @@ body {
   border-bottom: var(--text-title) solid 1px;
   outline: 0;
   box-shadow: none;
+}
+
+.navbar-toggler {
+  background-color: var(--bg-toggle-bar-btn);
 }
 
 @keyframes typing {

@@ -1,8 +1,7 @@
 <div class="container mx-wd d-flex flex-column justify-content-between py-8">
   <h1 class="hello__name">> Igor Lima.</h1>
   <p class="mt-4 hello__p">
-    Um desenvolvedor web ajudando empresas a darem vida às suas ideias com
-    tecnologia, expertise e um pouco de café. Confira meus
-    <span class="hello__span">projetos paralelos</span> abaixo.
+    {{ 'hello.phraseOne' | translate }}
+    <span class="hello__span">{{ 'hello.phraseTwo' | translate }}</span> {{ 'hello.phraseThree' | translate }}
   </p>
 </div>

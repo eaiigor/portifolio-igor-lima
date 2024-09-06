@@ -4,5 +4,64 @@
         "projects": "Projetos",
         "experience": "Experiência",
         "contact": "Contato"
+    },
+    "hello": {
+        "phraseOne": "Um desenvolvedor web ajudando empresas a darem vida às suas ideias com tecnologia, expertise e um pouco de café. Confira meus",
+        "phraseTwo": "projetos paralelos",
+        "phraseThree": "abaixo."
+    },
+    "about": {
+        "resume": "curriculo",
+        "education": "educacao",
+        "responseEducation": "Análise e Desenvolvimento de Sistemas - UNIS Varginha",
+        "experience": "experiencia",
+        "location": "localizacaoAtual",
+        "interests": "interesses",
+        "responseInterests": "\"Programação web\", \"Café\", \"Tocar instrumentos\", \"Marvel\"",
+        "contact": "informacoesParaContato"
+    },
+    "projects": {
+        "projects": "projetos",
+        "iflowPhrase": "Um simulador de sistema de streaming que permite adicionar os filmes em uma lista que é salva no local storage.",
+        "agendaMusicalPhrase": "Uma agenda digital musical que lista todos os eventos musicais das CCB´s do setor LAMBARI-MG",
+        "code": "Código"
+    },
+    "experiences": {
+        "title": "experiencias",
+        "sinckTab": "Sinck",
+        "wakkeTab": "Wakke",
+        "sinckPosition": "Desenvolvedor II",
+        "sinckPeriod": "Jul 2024 - Atual",
+        "sinckCompany": "@ Sinck",
+        "sinckDescription": "Sinck Soluções é uma empresa que em parceria com a Benner Sistemas oferece soluções de gestão ERP, RH e Logística para empresas de médio à grande porte há 20 anos.",
+        "responsibilities": "Um resumo sobre minhas responsabilidades na empresa:",
+        "sinckResponsibility1": "Desenvolvimento de novas rotinas para sistemas de clientes, tanto em ambiente Desktop quanto web, utilizando C# e .NET;",
+        "sinckResponsibility2": "Criação de DLLs personalizadas para atender às necessidades específicas dos projetos;",
+        "sinckResponsibility3": "Utilização de SQL Server para consultas e manipulação de dados;",
+        "sinckResponsibility4": "Correção de bugs e implementação de melhorias contínuas nos sistemas;",
+        "sinckResponsibility5": "Atendimentos de chamados para suporte aos clientes de tecnologia;",
+        "sinckResponsibility6": "Atualização e administração de ambientes de Homologação e Produção;",
+        "wakkePosition": "Desenvolvedor II",
+        "wakkePeriod": "Jan 2022 - Jul 2023",
+        "wakkeCompany": "@ Wakke",
+        "wakkeDescription": "Wakke = Escolaweb é um sistema de gestão escolar completo que está há mais de 14 anos atendendo instituições de todo o Brasil. O software conta com mais de 18 módulos integrados, dentre eles, o aplicativo exclusivo que auxilia na comunicação entre a escola e a família.",
+        "wakkeResponsibility1": "Início como estagiário de front-end, trabalhando com Angular no desenvolvimento de telas responsívas nos sistemas Wakke;",
+        "wakkeResponsibility2": "Contratado para o cargo de Desenvolvedor I e II, expandi minhas responsabilidades para back-end com C# e .NET no desenvolvimento de API's REST e adaptação de procedures do banco de dados para código C#;",
+        "wakkeResponsibility3": "Revisão de pull-requests e documentação de processos, garantindo a qualidade e a consistência do código;",
+        "wakkeResponsibility4": "Garantia de uma experiência de usuário consistente e responsiva em diferentes plataformas e dispositivos;",
+        "wakkeResponsibility5": "Utilização da biblioteca DevExpress para reformulação do sistema escolaweb em ambientes desktop."
+    },
+    "contact": {
+        "title": "contato",
+        "emailAltText": "caixa de email",
+        "namePlaceholder": "Nome",
+        "nameRequired": "Campo obrigatório.",
+        "emailPlaceholder": "Email",
+        "emailInvalid": "Por favor, insira um email válido.",
+        "subjectPlaceholder": "Assunto",
+        "subjectRequired": "Campo obrigatório.",
+        "messagePlaceholder": "Mensagem",
+        "messageRequired": "Campo obrigatório.",
+        "sendButton": "Enviar"
     }
 }

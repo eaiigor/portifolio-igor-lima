@@ -4,5 +4,74 @@
         "projects": "Projects",
         "experience": "Experience",
         "contact": "Contact"
+    },
+    "hello": {
+        "phraseOne": "A web developer helping companies bring their ideas to life with technology, expertise, and a bit of coffee. Check out my",
+        "phraseTwo": "side projects",
+        "phraseThree": "below."
+    },
+    "about": {
+        "resume": "curriculo",
+        "education": "educacao",
+        "responseEducation": "Análise e Desenvolvimento de Sistemas - UNIS Varginha",
+        "experience": "experiencia",
+        "location": "localizacaoAtual",
+        "interests": "interesses",
+        "responseInterests": "\"Programação web\", \"Café\", \"Tocar instrumentos\", \"Marvel\"",
+        "contact": "informacoesParaContato"
+    },
+    "about": {
+        "resume": "resume",
+        "education": "education",
+        "responseEducation": "Systems Analysis and Development - UNIS Varginha",
+        "experience": "experience",
+        "location": "currentLocation",
+        "interests": "interests",
+        "responseInterests": "\"Web programming\", \"Coffee\", \"Playing instruments\", \"Marvel\"",
+        "contact": "contact"
+    },
+    "projects": {
+        "projects": "projects",
+        "iflowPhrase": "A streaming system simulator that allows adding movies to a list saved in local storage.",
+        "agendaMusicalPhrase": "A digital music agenda that lists all the musical events of the CCBs in the LAMBARI-MG sector.",
+        "code": "Code"
+    },
+    "experiences": {
+        "title": "experiences",
+        "sinckTab": "Sinck",
+        "wakkeTab": "Wakke",
+        "sinckPosition": "Developer II",
+        "sinckPeriod": "Jul 2024 - Present",
+        "sinckCompany": "@ Sinck",
+        "sinckDescription": "Sinck Soluções is a company that partners with Benner Sistemas to offer ERP, HR, and Logistics management solutions for medium to large companies for over 20 years.",
+        "responsibilities": "A summary of my responsibilities at the company:",
+        "sinckResponsibility1": "Development of new routines for client systems, both in Desktop and web environments, using C# and .NET;",
+        "sinckResponsibility2": "Creation of custom DLLs to meet specific project needs;",
+        "sinckResponsibility3": "Use of SQL Server for queries and data manipulation;",
+        "sinckResponsibility4": "Bug fixes and continuous system improvements;",
+        "sinckResponsibility5": "Handling support calls for client technology support;",
+        "sinckResponsibility6": "Update and management of Homologation and Production environments;",
+        "wakkePosition": "Developer II",
+        "wakkePeriod": "Jan 2022 - Jul 2023",
+        "wakkeCompany": "@ Wakke",
+        "wakkeDescription": "Wakke = Escolaweb is a complete school management system that has been serving institutions across Brazil for over 14 years. The software includes over 18 integrated modules, including an exclusive app that helps communication between school and family.",
+        "wakkeResponsibility1": "Started as a front-end intern, working with Angular to develop responsive screens in Wakke systems;",
+        "wakkeResponsibility2": "Hired as Developer I and II, expanded my responsibilities to back-end with C# and .NET in the development of REST APIs and adaptation of database procedures to C# code;",
+        "wakkeResponsibility3": "Review of pull requests and process documentation, ensuring code quality and consistency;",
+        "wakkeResponsibility4": "Ensuring a consistent and responsive user experience across different platforms and devices;",
+        "wakkeResponsibility5": "Use of the DevExpress library to revamp the Escolaweb system in desktop environments."
+    },
+    "contact": {
+        "title": "contact",
+        "emailAltText": "email box",
+        "namePlaceholder": "Name",
+        "nameRequired": "This field is required.",
+        "emailPlaceholder": "Email",
+        "emailInvalid": "Please enter a valid email.",
+        "subjectPlaceholder": "Subject",
+        "subjectRequired": "This field is required.",
+        "messagePlaceholder": "Message",
+        "messageRequired": "This field is required.",
+        "sendButton": "Send"
     }
 }

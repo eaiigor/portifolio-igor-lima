@@ -1,14 +1,13 @@
 <div class="container mx-wd py-8">
     <div class="d-flex justify-content-center">
-        <h3 class="title_c">&lt;experiencias /&gt;</h3>
+        <h3 class="title_c">&lt;{{ 'experiences.title' | translate }} /&gt;</h3>
     </div>
 
     <div class="d-flex w-100 flex-responsive gap-3 mt-6">
         <div class="w-20 mb-3">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-sinck-list" data-bs-toggle="list" href="#list-sinck" role="tab" aria-controls="list-sinck">Sinck</a>
-                <!-- <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Freelancer</a> -->
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Wakke</a>
+                <a class="list-group-item list-group-item-action active" id="list-sinck-list" data-bs-toggle="list" href="#list-sinck" role="tab" aria-controls="list-sinck">{{ 'experiences.sinckTab' | translate }}</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">{{ 'experiences.wakkeTab' | translate }}</a>
             </div>
         </div>
         <div class="w-80 px-5">
@@ -16,70 +15,38 @@
                 <div class="tab-pane fade show active" id="list-sinck" role="tabpanel" aria-labelledby="list-sinck-list">
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-between responsive-titles">
-                            <h4>Desenvolvedor II</h4>
-                            <h5>Jul 2024 - Atual</h5>
+                            <h4>{{ 'experiences.sinckPosition' | translate }}</h4>
+                            <h5>{{ 'experiences.sinckPeriod' | translate }}</h5>
                         </div>
-                        <a class="exp__link" href="https://sinck.com.br/" target="_blank">{{ "@ Sinck" }}</a>
-                        <p class="text-justify mt-4 fw-p">
-                            Sinck Soluções é uma empresa que em parceria com a Benner Sistemas oferece soluções de gestão ERP, RH e Logística para empresas de médio à grande porte há 20 anos.
-                        </p>
-                        <p class="text-justify mt-2 fw-p">
-                            Um resumo sobre minhas responsabilidades na empresa:
-                        </p>
+                        <a class="exp__link" href="https://sinck.com.br/" target="_blank">{{ 'experiences.sinckCompany' | translate }}</a>
+                        <p class="text-justify mt-4 fw-p">{{ 'experiences.sinckDescription' | translate }}</p>
+                        <p class="text-justify mt-2 fw-p">{{ 'experiences.responsibilities' | translate }}</p>
                         <ul class="tab-list text-justify d-flex flex-column gap-3 mt-2 fw-p">
-                            <li>
-                                Desenvolvimento de novas rotinas para sistemas de clientes, tanto em ambiente Desktop quanto web, utilizando C# e .NET;
-                            </li>
-                            <li>
-                                Criação de DLLs personalizadas para atender às necessidades específicas dos projetos;
-                            </li>
-                            <li>
-                                Utilização de SQL Server para consultas e manipulação de dados;
-                            </li>
-                            <li>Correção de bugs e implementação de melhorias contínuas nos sistemas;</li>
-                            <li>Atendimentos de chamados para suporte aos clientes de tecnologia;</li>
-                            <li>Atualização e administração de ambientes de Homologação e Produção;</li>
+                            <li>{{ 'experiences.sinckResponsibility1' | translate }}</li>
+                            <li>{{ 'experiences.sinckResponsibility2' | translate }}</li>
+                            <li>{{ 'experiences.sinckResponsibility3' | translate }}</li>
+                            <li>{{ 'experiences.sinckResponsibility4' | translate }}</li>
+                            <li>{{ 'experiences.sinckResponsibility5' | translate }}</li>
+                            <li>{{ 'experiences.sinckResponsibility6' | translate }}</li>
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="tab-pane fade show" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    <div class="d-flex flex-column">
-                        <div class="d-flex justify-content-between responsive-titles">
-                            <h4>Freelancer</h4>
-                            <h5>Jul 2023 - Ago 2023</h5>
-                        </div>
-                        <h5>Autonomo</h5>
-                        <p class="text-justify mt-4">
-                            Como freelancer, foquei em aprender a lidar diretamente com os clientes e a organizar meu trabalho para atender às suas demandas de forma eficaz. Esse tempo foi essencial para desenvolver habilidades de comunicação direta e clara, garantindo que entendia completamente as expectativas dos clientes. Aprendi a gerenciar meu tempo e projetos de forma mais eficiente, priorizando entregas de alta qualidade dentro dos prazos estabelecidos. Esta experiência me ensinou a importância da autonomia e da gestão pessoal.
-                        </p>
-                    </div>
-                </div> -->
+
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-between responsive-titles">
-                            <h4>Desenvolvedor II</h4>
-                            <h5>Jan 2022 - Jul 2023</h5>
+                            <h4>{{ 'experiences.wakkePosition' | translate }}</h4>
+                            <h5>{{ 'experiences.wakkePeriod' | translate }}</h5>
                         </div>
-                        <a class="exp__link" href="https://escolaweb.com.br/" target="_blank">{{ "@ Wakke" }}</a>
-                        <p class="text-justify mt-4 fw-p">
-                            Wakke = Escolaweb é um sistema de gestão escolar completo que está há mais de 14 anos atendendo instituições de todo o Brasil.
-                            O software conta com mais de 18 módulos integrados, dentre eles, o aplicativo exclusivo que auxilia na comunicação entre a escola e a família.
-                        </p>
-                        <p class="text-justify mt-2 fw-p">
-                            Um resumo sobre minhas responsabilidades na empresa:
-                        </p>
+                        <a class="exp__link" href="https://escolaweb.com.br/" target="_blank">{{ 'experiences.wakkeCompany' | translate }}</a>
+                        <p class="text-justify mt-4 fw-p">{{ 'experiences.wakkeDescription' | translate }}</p>
+                        <p class="text-justify mt-2 fw-p">{{ 'experiences.responsibilities' | translate }}</p>
                         <ul class="tab-list text-justify d-flex flex-column gap-3 mt-2 fw-p">
-                            <li>
-                                Início como estagiário de front-end, trabalhando com Angular no desenvolvimento de telas responsívas nos sistemas Wakke;
-                            </li>
-                            <li>
-                                Contratado para o cargo de Desenvolvedor I e II, expandi minhas responsabilidades para back-end com C# e .NET no desenvolvimento de API's REST e adaptação de procedures do banco de dados para código C#;
-                            </li>
-                            <li>
-                                Revisão de pull-requests e documentação de processos, garantindo a qualidade e a consistência do código;
-                            </li>
-                            <li>Garantia de uma experiência de usuário consistente e responsiva em diferentes plataformas e dispositivos;</li>
-                            <li>Utilização da biblioteca DevExpress para reformulação do sistema escolaweb em ambientes desktop.</li>
+                            <li>{{ 'experiences.wakkeResponsibility1' | translate }}</li>
+                            <li>{{ 'experiences.wakkeResponsibility2' | translate }}</li>
+                            <li>{{ 'experiences.wakkeResponsibility3' | translate }}</li>
+                            <li>{{ 'experiences.wakkeResponsibility4' | translate }}</li>
+                            <li>{{ 'experiences.wakkeResponsibility5' | translate }}</li>
                         </ul>
                     </div>
                 </div>
