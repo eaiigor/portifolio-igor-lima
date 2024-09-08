@@ -1,19 +1,59 @@
-<nav class="app-header navbar navbar-expand-lg bg-body-tertiary" [ngClass]="{ 'scrolled': isScrolled }">
+<nav
+  class="app-header navbar navbar-expand-lg bg-body-tertiary"
+  [ngClass]="{ scrolled: isScrolled }"
+>
   <div class="container container-fluid">
-    <img src="assets/IL{{ logo }}.png" alt="IL" class="navbar-brand header__logo" (click)="scrollToTop()">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <img
+      src="assets/IL{{ logo }}.png"
+      alt="IL"
+      class="navbar-brand header__logo"
+      (click)="scrollToTop()"
+    />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="place-content: end;">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      style="place-content: end"
+    >
       <ul class="navbar-nav gap-4 mb-2 mb-lg-0">
-        <li><a (click)="scrollTo('about')">{{ 'header.about' | translate }}</a></li>
+        <li (click)="switchLanguage()">
+          <img src="assets/{{ flag }}.svg" alt="country-flag" />
+        </li>
+        <li>
+          <a (click)="scrollTo('about')">{{ "header.about" | translate }}</a>
+        </li>
         <!-- <li><a (click)="scrollTo('stacks')">Conhecimentos</a></li> -->
-        <li><a (click)="scrollTo('my-projects')">{{ 'header.projects' | translate }}</a></li>
-        <li><a (click)="scrollTo('experience')">{{ 'header.experience' | translate }}</a></li>
-        <li><a (click)="scrollTo('contact')">{{ 'header.contact' | translate }}</a></li>
-        <li (click)="changeTheme()"><i class="mdi mdi-theme-light-dark"></i></li>
-        <li (click)="switchLanguage()"><img src="assets/{{ flag }}.svg" alt="country-flag"></li>
+        <li>
+          <a (click)="scrollTo('my-projects')">{{
+            "header.projects" | translate
+          }}</a>
+        </li>
+        <li>
+          <a (click)="scrollTo('experience')">{{
+            "header.experience" | translate
+          }}</a>
+        </li>
+        <li>
+          <a (click)="scrollTo('contact')">{{
+            "header.contact" | translate
+          }}</a>
+        </li>
+        <li>
+          <label class="switch">
+            <input (click)="changeTheme()" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </li>
       </ul>
     </div>
   </div>
