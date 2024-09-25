@@ -6,7 +6,7 @@
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0);
   padding: 0 2rem;
-  box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 5px;
+ /*  box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 5px; */
 
   .header__logo {
     width: 84px;
@@ -37,7 +37,7 @@
     align-items: center;
 
     img {
-      width: 2rem;
+      width: 1.6rem;
       transition: transform 0.3s ease-in-out;
     }
 

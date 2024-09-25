@@ -11,7 +11,7 @@ export class HeaderComponent {
   isScrolled = true;
 
   logo = 'light';
-  flag = 'en-us'
+  flag = 'pt-br'
 
   /*   @HostListener('window:scroll', [])
     onWindowScroll() {
@@ -55,9 +55,9 @@ export class HeaderComponent {
     
     if (this.translate.currentLang === 'en') {
       
-      return (this.flag = 'pt-br');
+      return (this.flag = 'en-us');
     }
 
-    return (this.flag = 'en-us');
+    return (this.flag = 'pt-br');
   }
 }
