@@ -41,7 +41,7 @@
         "sinckTab": "Sinck",
         "wakkeTab": "Wakke",
         "sinckPosition": "Developer II",
-        "sinckPeriod": "Jul 2024 - Present",
+        "sinckPeriod": "Jul 2024 - Dez 2024",
         "sinckCompany": "@ Sinck",
         "sinckDescription": "Sinck Soluções is a company that partners with Benner Sistemas to offer ERP, HR, and Logistics management solutions for medium to large companies for over 20 years.",
         "responsibilities": "A summary of my responsibilities at the company:",
@@ -59,7 +59,20 @@
         "wakkeResponsibility2": "Hired as Developer I and II, expanded my responsibilities to back-end with C# and .NET in the development of REST APIs and adaptation of database procedures to C# code;",
         "wakkeResponsibility3": "Review of pull requests and process documentation, ensuring code quality and consistency;",
         "wakkeResponsibility4": "Ensuring a consistent and responsive user experience across different platforms and devices;",
-        "wakkeResponsibility5": "Use of the DevExpress library to revamp the Escolaweb system in desktop environments."
+        "wakkeResponsibility5": "Use of the DevExpress library to revamp the Escolaweb system in desktop environments.",
+        "bennerTab": "Benner",
+        "bennerPosition": "Full Stack Developer",
+        "bennerPeriod": "Dec 2024 - Present",
+        "bennerCompany": "@ Benner",
+        "bennerDescription": "Benner is a leading provider of technology solutions for the healthcare, legal, ERP, logistics, and HR sectors. I work on the maintenance and development of the hospital system ModernaNet.",
+        "bennerResponsibility1": "Maintenance of the hospital management system ModernaNet;",
+        "bennerResponsibility2": "Development of new features based on client requirements;",
+        "bennerResponsibility3": "Migration of screens and logic from the legacy system Simah (Visual Basic) to ModernaNet (Javascript and C# .NET);",
+        "bennerResponsibility4": "Bug fixing in both staging and production environments;",
+        "bennerResponsibility5": "Handling development-related helpdesk tickets;",
+        "bennerResponsibility6": "Technical documentation of developed processes;",
+        "bennerResponsibility7": "Training and onboarding of new developers into the team;"
+
     },
     "contact": {
         "title": "contact",

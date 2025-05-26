@@ -31,7 +31,7 @@
         "sinckTab": "Sinck",
         "wakkeTab": "Wakke",
         "sinckPosition": "Desenvolvedor II",
-        "sinckPeriod": "Jul 2024 - Atual",
+        "sinckPeriod": "Jul 2024 - Dez 2024",
         "sinckCompany": "@ Sinck",
         "sinckDescription": "Sinck Soluções é uma empresa que em parceria com a Benner Sistemas oferece soluções de gestão ERP, RH e Logística para empresas de médio à grande porte há 20 anos.",
         "responsibilities": "Um resumo sobre minhas responsabilidades na empresa:",
@@ -49,7 +49,20 @@
         "wakkeResponsibility2": "Contratado para o cargo de Desenvolvedor I e II, expandi minhas responsabilidades para back-end com C# e .NET no desenvolvimento de API's REST e adaptação de procedures do banco de dados para código C#;",
         "wakkeResponsibility3": "Revisão de pull-requests e documentação de processos, garantindo a qualidade e a consistência do código;",
         "wakkeResponsibility4": "Garantia de uma experiência de usuário consistente e responsiva em diferentes plataformas e dispositivos;",
-        "wakkeResponsibility5": "Utilização da biblioteca DevExpress para reformulação do sistema escolaweb em ambientes desktop."
+        "wakkeResponsibility5": "Utilização da biblioteca DevExpress para reformulação do sistema escolaweb em ambientes desktop.",
+        "bennerTab": "Benner",
+        "bennerPosition": "Desenvolvedor Full Stack",
+        "bennerPeriod": "Dez 2024 - Atual",
+        "bennerCompany": "@ Benner",
+        "bennerDescription": "A Benner é referência no fornecimento de soluções de tecnologia para o setor de saúde, jurídico, ERP, logística e RH. Participo da sustentação e evolução do sistema hospitalar ModernaNet.",
+        "bennerResponsibility1": "Sustentação do sistema hospitalar ModernaNet;",
+        "bennerResponsibility2": "Criação de novas funcionalidades conforme demandas dos clientes;",
+        "bennerResponsibility3": "Conversão de telas e lógicas do sistema legado Simah (Visual Basic) para o ModernaNet (Javascript e C# .NET);",
+        "bennerResponsibility4": "Correção de bugs identificados em ambiente de homologação e produção;",
+        "bennerResponsibility5": "Atendimento a chamados do helpdesk relacionados ao desenvolvimento;",
+        "bennerResponsibility6": "Documentação técnica dos processos desenvolvidos;",
+        "bennerResponsibility7": "Treinamento e onboarding de novos desenvolvedores na equipe;"
+
     },
     "contact": {
         "title": "contato",

@@ -6,13 +6,36 @@
     <div class="d-flex w-100 flex-responsive gap-3 mt-6">
         <div class="w-20 mb-3">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-sinck-list" data-bs-toggle="list" href="#list-sinck" role="tab" aria-controls="list-sinck">{{ 'experiences.sinckTab' | translate }}</a>
+                <a class="list-group-item list-group-item-action active" id="list-benner-list" data-bs-toggle="list" href="#list-benner" role="tab" aria-controls="list-benner">{{ 'experiences.bennerTab' | translate }}</a>
+                <a class="list-group-item list-group-item-action" id="list-sinck-list" data-bs-toggle="list" href="#list-sinck" role="tab" aria-controls="list-sinck">{{ 'experiences.sinckTab' | translate }}</a>
                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">{{ 'experiences.wakkeTab' | translate }}</a>
             </div>
         </div>
         <div class="w-80 px-5">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-sinck" role="tabpanel" aria-labelledby="list-sinck-list">
+
+                <div class="tab-pane fade show active" id="list-benner" role="tabpanel" aria-labelledby="list-benner-list">
+                    <div class="d-flex flex-column">
+                      <div class="d-flex justify-content-between responsive-titles">
+                        <h4>{{ 'experiences.bennerPosition' | translate }}</h4>
+                        <h5>{{ 'experiences.bennerPeriod' | translate }}</h5>
+                      </div>
+                      <a class="exp__link" href="https://www.benner.com.br/" target="_blank">{{ 'experiences.bennerCompany' | translate }}</a>
+                      <p class="text-justify mt-4 fw-p">{{ 'experiences.bennerDescription' | translate }}</p>
+                      <p class="text-justify mt-2 fw-p">{{ 'experiences.responsibilities' | translate }}</p>
+                      <ul class="tab-list text-justify d-flex flex-column gap-3 mt-2 fw-p">
+                        <li>{{ 'experiences.bennerResponsibility1' | translate }}</li>
+                        <li>{{ 'experiences.bennerResponsibility2' | translate }}</li>
+                        <li>{{ 'experiences.bennerResponsibility3' | translate }}</li>
+                        <li>{{ 'experiences.bennerResponsibility4' | translate }}</li>
+                        <li>{{ 'experiences.bennerResponsibility5' | translate }}</li>
+                        <li>{{ 'experiences.bennerResponsibility6' | translate }}</li>
+                        <li>{{ 'experiences.bennerResponsibility7' | translate }}</li>
+                      </ul>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="list-sinck" role="tabpanel" aria-labelledby="list-sinck-list">
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-between responsive-titles">
                             <h4>{{ 'experiences.sinckPosition' | translate }}</h4>
@@ -50,6 +73,7 @@
                         </ul>
                     </div>
                 </div>
+                  
             </div>
         </div>
     </div>
