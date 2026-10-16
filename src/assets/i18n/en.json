@@ -10,10 +10,10 @@
         "lang": "PT"
     },
     "hello": {
-        "role": "Full stack developer in São Paulo",
-        "phraseOne": "A web developer helping companies bring their ideas to life with technology, expertise, and a bit of coffee. Check out my",
+        "role": "Full stack .NET developer in São Paulo",
+        "phraseOne": "I currently work on a hospital management system that hospitals and clinics use every day, from patient check-in to billing. In my spare time, I build a few",
         "phraseTwo": "side projects",
-        "phraseThree": "below.",
+        "phraseThree": ".",
         "resume": "Resume",
         "status": "On call at Benner, working on ModernaNet",
         "vitalsTitle": "Vital signs",
@@ -25,7 +25,7 @@
     },
     "about": {
         "title": "About",
-        "intro": "I work with Angular on the front end and C# .NET on the back end, maintaining systems that hospitals, schools and companies use every day.",
+        "intro": "I work with C# .NET and SQL on a hospital system, where patient care, health records, and billing can't stop. I get along well with my team, other departments, and leadership. I usually help new developers through their first weeks on the team, so they can find their way around the project. I can explain technical issues in a way non-technical people understand, and I rarely say no when someone needs help.",
         "education": "Education",
         "responseEducation": "Systems Analysis and Development, UNIS Varginha",
         "location": "Location",
@@ -37,7 +37,7 @@
         "recordTitle": "Medical record",
         "recordName": "Name",
         "recordRole": "Specialty",
-        "recordRoleValue": "Full stack development"
+        "recordRoleValue": "Full stack .NET, healthcare systems"
     },
     "projects": {
         "projects": "Projects",

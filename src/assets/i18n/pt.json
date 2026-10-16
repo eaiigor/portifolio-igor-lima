@@ -10,10 +10,10 @@
         "lang": "EN"
     },
     "hello": {
-        "role": "Desenvolvedor full stack em São Paulo",
-        "phraseOne": "Um desenvolvedor web ajudando empresas a darem vida às suas ideias com tecnologia, expertise e um pouco de café. Confira meus",
+        "role": "Desenvolvedor full stack .NET em São Paulo",
+        "phraseOne": "Hoje cuido de um sistema de gestão hospitalar usado todos os dias por hospitais e clínicas, do atendimento ao faturamento. Nas horas vagas, desenvolvo alguns",
         "phraseTwo": "projetos paralelos",
-        "phraseThree": "abaixo.",
+        "phraseThree": ".",
         "resume": "Currículo",
         "status": "Em plantão na Benner, cuidando do ModernaNet",
         "vitalsTitle": "Sinais vitais",
@@ -25,7 +25,7 @@
     },
     "about": {
         "title": "Sobre",
-        "intro": "Trabalho com Angular no front-end e C# .NET no back-end, cuidando de sistemas usados todos os dias por hospitais, escolas e empresas.",
+        "intro": "Trabalho com C# .NET e SQL em um sistema hospitalar, onde atendimento, prontuário e faturamento não podem parar. Me dou bem com meu time, outros setores e a liderança. Costumo acompanhar quem chega no time, ajudando cada pessoa a se situar no projeto. Consigo explicar problemas técnicos de um jeito que quem não é da área entende, e dificilmente digo não quando alguém precisa de ajuda.",
         "education": "Formação",
         "responseEducation": "Análise e Desenvolvimento de Sistemas, UNIS Varginha",
         "location": "Localização",
@@ -37,7 +37,7 @@
         "recordTitle": "Prontuário",
         "recordName": "Nome",
         "recordRole": "Especialidade",
-        "recordRoleValue": "Desenvolvimento full stack"
+        "recordRoleValue": "Full stack .NET, sistemas de saúde"
     },
     "projects": {
         "projects": "Projetos",
