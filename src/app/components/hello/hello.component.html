@@ -1,7 +1,45 @@
-<div class="container mx-wd d-flex flex-column justify-content-between py-8">
-  <h1 class="hello__name">> Igor Lima.</h1>
-  <p class="mt-4 hello__p">
-    {{ 'hello.phraseOne' | translate }}
-    <span class="hello__span">{{ 'hello.phraseTwo' | translate }}</span> {{ 'hello.phraseThree' | translate }}
-  </p>
-</div>
+<section class="hero">
+  <div class="hero__grid-bg" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+    <div class="hero__main">
+      <p class="status"><span class="status__dot" aria-hidden="true"></span>{{ 'hello.status' | translate }}</p>
+      <h1 class="hero__name">Igor Lima</h1>
+      <p class="hero__role">{{ 'hello.role' | translate }}</p>
+      <p class="hero__text">
+        {{ 'hello.phraseOne' | translate }}
+        <a href="#my-projects">{{ 'hello.phraseTwo' | translate }}</a> {{ 'hello.phraseThree' | translate }}
+      </p>
+      <div class="hero__actions">
+        <a class="btn" href="#contact">{{ 'hello.contact' | translate }}</a>
+        <a class="btn btn--ghost" href="assets/CV-IGOR-LIMA.pdf" target="_blank" rel="noopener"><i class="mdi mdi-file-document-outline" aria-hidden="true"></i>{{ 'hello.resume' | translate }}</a>
+      </div>
+    </div>
+
+    <aside class="monitor" [attr.aria-label]="'hello.vitalsTitle' | translate">
+      <p class="monitor__title">{{ 'hello.vitalsTitle' | translate }}</p>
+      <dl class="monitor__vitals">
+        <div class="vital vital--wide vital--main">
+          <dt>{{ 'hello.vitalTime' | translate }}</dt>
+          <dd>{{ '2022-01' | duration }}</dd>
+          <dd class="vital__note">{{ 'hello.vitalSince' | translate }}</dd>
+        </div>
+        <div class="vital">
+          <dt>{{ 'hello.vitalCompanies' | translate }}</dt>
+          <dd>3</dd>
+        </div>
+        <div class="vital">
+          <dt>{{ 'hello.vitalStack' | translate }}</dt>
+          <dd>Angular + .NET</dd>
+        </div>
+      </dl>
+      <svg class="monitor__trace" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true">
+        <path class="trace trace--base" d="M0 34 H96 l6 0 l5 -6 l5 6 l6 0 l4 10 l6 -38 l6 44 l5 -16 l8 0 l6 -7 l7 7 H300" />
+        <path class="trace trace--scan" pathLength="100" d="M0 34 H96 l6 0 l5 -6 l5 6 l6 0 l4 10 l6 -38 l6 44 l5 -16 l8 0 l6 -7 l7 7 H300" />
+      </svg>
+    </aside>
+  </div>
+
+  <svg class="hero__ecg" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ecg ecg--draw" pathLength="100" d="M0 48 H560 l10 0 l8 -9 l8 9 l10 0 l6 16 l9 -58 l9 70 l8 -28 l14 0 l9 -11 l11 11 H1200" />
+  </svg>
+</section>

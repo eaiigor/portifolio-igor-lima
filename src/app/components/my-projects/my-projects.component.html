@@ -1,81 +1,36 @@
-<div class="container mx-wd py-8">
-    <div class="d-flex justify-content-center">
-        <h3 class="title_c">&lt;{{ 'projects.projects' | translate }} /&gt;</h3>
-    </div>
-
-    <div>
-        <div class="mp__container row d-flex">
-            <div class="mp__container__img col">
-                <a href="https://iflowplus.igorlima.dev/" target="_blank">
-                    <img class="mobal-img" src="assets/iflow-image.png"  alt="Imagem iFlow +">
-                </a>
-            </div>
-
-            <div class="mp__container__body col d-flex flex-column justify-content-center mp__gap_2-6">
-                <div>
-                    <h6 class="mp__title">iFlow +</h6>
-                </div>
-                <div>
-                    <p class="mp__text">
-                        {{ 'projects.iflowPhrase' | translate }}
-                    </p>
-                </div>
-                <div class="mp__tecnologies">
-                    <span>HTML5</span>
-                    <span>SCSS</span>
-                    <span>Typescript</span>
-                    <span>Angular</span>
-                    <span>Bootstrap</span>
-                </div>
-                <div class="mp__buttons">
-                    <a href="https://github.com/eaiigor/iflowplus" target="_blank">
-                        <span>{{ 'projects.code' | translate }}</span>
-                        <i class="mdi mdi-github ms-2"></i>
-                    </a>
-    
-                    <a href="https://iflowplus.igorlima.dev/" target="_blank">
-                        <span>Demo</span>
-                        <i class="mdi mdi-open-in-new ms-2"></i>
-                    </a>
-                </div>
-            </div>
+<section class="wrap section">
+  <div class="section__head" appReveal>
+    <h2 class="section__title">{{ 'projects.projects' | translate }}</h2>
+  </div>
+  <div class="projects">
+    <article class="project" appReveal>
+      <a class="project__shot" href="https://iflowplus.igorlima.dev/" target="_blank" rel="noopener" tabindex="-1">
+        <img src="assets/iflow-image.png" [alt]="('projects.imageAlt' | translate) + ' iFlow +'" loading="lazy" />
+      </a>
+      <div class="project__body">
+        <h3 class="project__title">iFlow +</h3>
+        <p class="project__text">{{ 'projects.iflowPhrase' | translate }}</p>
+        <ul class="tags"><li>Angular</li><li>TypeScript</li><li>SCSS</li><li>Bootstrap</li></ul>
+        <div class="project__links">
+          <a href="https://iflowplus.igorlima.dev/" target="_blank" rel="noopener"><i class="mdi mdi-open-in-new" aria-hidden="true"></i>{{ 'projects.demo' | translate }}</a>
+          <a href="https://github.com/eaiigor/iflowplus" target="_blank" rel="noopener"><i class="mdi mdi-github" aria-hidden="true"></i>{{ 'projects.code' | translate }}</a>
         </div>
+      </div>
+    </article>
 
-        <div class="mp__container row d-flex">
-            <div class="mp__container__img col">
-                <a href="https://am-ccb-lambari.vercel.app/" target="_blank">
-                    <img class="mobal-img" src="assets/am-ccb-lambari.png"  alt="Imagem iFlow +">
-                </a>
-            </div>
-
-            <div class="mp__container__body col d-flex flex-column justify-content-center mp__gap_2-6">
-                <div>
-                    <h6 class="mp__title">Agenda Musical Lambari</h6>
-                </div>
-                <div>
-                    <p class="mp__text">
-                        {{ 'projects.agendaMusicalPhrase' | translate }}
-                    </p>
-                </div>
-                <div class="mp__tecnologies">
-                    <span>HTML5</span>
-                    <span>SCSS</span>
-                    <span>Typescript</span>
-                    <span>Angular</span>
-                    <span>Bootstrap</span>
-                </div>
-                <div class="mp__buttons">
-                    <a href="https://github.com/eaiigor/am-ccb-lambari" target="_blank">
-                        <span>{{ 'projects.code' | translate }}</span>
-                        <i class="mdi mdi-github ms-2"></i>
-                    </a>
-    
-                    <a href="https://am-ccb-lambari.vercel.app/" target="_blank">
-                        <span>Demo</span>
-                        <i class="mdi mdi-open-in-new ms-2"></i>
-                    </a>
-                </div>
-            </div>
+    <article class="project" appReveal>
+      <a class="project__shot" href="https://am-ccb-lambari.vercel.app/" target="_blank" rel="noopener" tabindex="-1">
+        <img src="assets/am-ccb-lambari.png" [alt]="('projects.imageAlt' | translate) + ' Agenda Musical Lambari'" loading="lazy" />
+      </a>
+      <div class="project__body">
+        <h3 class="project__title">Agenda Musical Lambari</h3>
+        <p class="project__text">{{ 'projects.agendaMusicalPhrase' | translate }}</p>
+        <ul class="tags"><li>Angular</li><li>TypeScript</li><li>SCSS</li><li>Bootstrap</li></ul>
+        <div class="project__links">
+          <a href="https://am-ccb-lambari.vercel.app/" target="_blank" rel="noopener"><i class="mdi mdi-open-in-new" aria-hidden="true"></i>{{ 'projects.demo' | translate }}</a>
+          <a href="https://github.com/eaiigor/am-ccb-lambari" target="_blank" rel="noopener"><i class="mdi mdi-github" aria-hidden="true"></i>{{ 'projects.code' | translate }}</a>
         </div>
-    </div>
-</div>
+      </div>
+    </article>
+  </div>
+</section>

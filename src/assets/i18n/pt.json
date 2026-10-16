@@ -3,36 +3,58 @@
         "about": "Sobre",
         "projects": "Projetos",
         "experience": "Experiência",
-        "contact": "Contato"
+        "contact": "Contato",
+        "menu": "Menu",
+        "switchLanguage": "Mudar idioma para inglês",
+        "switchTheme": "Alternar tema claro/escuro",
+        "lang": "EN"
     },
     "hello": {
+        "role": "Desenvolvedor full stack em São Paulo",
         "phraseOne": "Um desenvolvedor web ajudando empresas a darem vida às suas ideias com tecnologia, expertise e um pouco de café. Confira meus",
         "phraseTwo": "projetos paralelos",
-        "phraseThree": "abaixo."
+        "phraseThree": "abaixo.",
+        "resume": "Currículo",
+        "status": "Em plantão na Benner, cuidando do ModernaNet",
+        "vitalsTitle": "Sinais vitais",
+        "vitalSince": "desde janeiro de 2022",
+        "vitalCompanies": "Empresas",
+        "vitalStack": "Stack principal",
+        "contact": "Fale comigo",
+        "vitalTime": "Tempo de atuação"
     },
     "about": {
-        "resume": "curriculo",
-        "education": "educacao",
-        "responseEducation": "Análise e Desenvolvimento de Sistemas - UNIS Varginha",
-        "experience": "experiencia",
-        "location": "localizacaoAtual",
-        "interests": "interesses",
-        "responseInterests": "\"Programação web\", \"Café\", \"Tocar instrumentos\", \"Marvel\"",
-        "contact": "informacoesParaContato"
+        "title": "Sobre",
+        "intro": "Trabalho com Angular no front-end e C# .NET no back-end, cuidando de sistemas usados todos os dias por hospitais, escolas e empresas.",
+        "education": "Formação",
+        "responseEducation": "Análise e Desenvolvimento de Sistemas, UNIS Varginha",
+        "location": "Localização",
+        "responseLocation": "São Paulo, SP, Brasil",
+        "interests": "Interesses",
+        "responseInterests": "Programação web, café, tocar instrumentos e Marvel",
+        "stack": "Stack",
+        "resume": "Baixar currículo (PDF)",
+        "recordTitle": "Prontuário",
+        "recordName": "Nome",
+        "recordRole": "Especialidade",
+        "recordRoleValue": "Desenvolvimento full stack"
     },
     "projects": {
-        "projects": "projetos",
+        "projects": "Projetos",
         "iflowPhrase": "Um simulador de sistema de streaming que permite adicionar os filmes em uma lista que é salva no local storage.",
         "agendaMusicalPhrase": "Uma agenda digital musical que lista todos os eventos musicais das CCB´s do setor LAMBARI-MG",
-        "code": "Código"
+        "code": "Código",
+        "demo": "Ver projeto",
+        "imageAlt": "Tela do projeto"
     },
     "experiences": {
-        "title": "experiencias",
+        "title": "Experiência",
+        "showResponsibilities": "Responsabilidades",
         "sinckTab": "Sinck",
         "wakkeTab": "Wakke",
         "sinckPosition": "Desenvolvedor II",
         "sinckPeriod": "Jul 2024 - Dez 2024",
-        "sinckCompany": "@ Sinck",
+        "sinckCompany": "Sinck Soluções",
         "sinckDescription": "Sinck Soluções é uma empresa que em parceria com a Benner Sistemas oferece soluções de gestão ERP, RH e Logística para empresas de médio à grande porte há 20 anos.",
         "responsibilities": "Um resumo sobre minhas responsabilidades na empresa:",
         "sinckResponsibility1": "Desenvolvimento de novas rotinas para sistemas de clientes, tanto em ambiente Desktop quanto web, utilizando C# e .NET;",
@@ -43,7 +65,7 @@
         "sinckResponsibility6": "Atualização e administração de ambientes de Homologação e Produção;",
         "wakkePosition": "Desenvolvedor II",
         "wakkePeriod": "Jan 2022 - Jul 2023",
-        "wakkeCompany": "@ Wakke",
+        "wakkeCompany": "Wakke",
         "wakkeDescription": "Wakke = Escolaweb é um sistema de gestão escolar completo que está há mais de 14 anos atendendo instituições de todo o Brasil. O software conta com mais de 18 módulos integrados, dentre eles, o aplicativo exclusivo que auxilia na comunicação entre a escola e a família.",
         "wakkeResponsibility1": "Início como estagiário de front-end, trabalhando com Angular no desenvolvimento de telas responsívas nos sistemas Wakke;",
         "wakkeResponsibility2": "Contratado para o cargo de Desenvolvedor I e II, expandi minhas responsabilidades para back-end com C# e .NET no desenvolvimento de API's REST e adaptação de procedures do banco de dados para código C#;",
@@ -53,7 +75,7 @@
         "bennerTab": "Benner",
         "bennerPosition": "Desenvolvedor Full Stack",
         "bennerPeriod": "Dez 2024 - Atual",
-        "bennerCompany": "@ Benner",
+        "bennerCompany": "Benner",
         "bennerDescription": "A Benner é referência no fornecimento de soluções de tecnologia para o setor de saúde, jurídico, ERP, logística e RH. Participo da sustentação e evolução do sistema hospitalar ModernaNet.",
         "bennerResponsibility1": "Sustentação do sistema hospitalar ModernaNet;",
         "bennerResponsibility2": "Criação de novas funcionalidades conforme demandas dos clientes;",
@@ -62,19 +84,25 @@
         "bennerResponsibility5": "Atendimento a chamados do helpdesk relacionados ao desenvolvimento;",
         "bennerResponsibility6": "Documentação técnica dos processos desenvolvidos;",
         "bennerResponsibility7": "Treinamento e onboarding de novos desenvolvedores na equipe;"
-
     },
     "contact": {
-        "title": "contato",
+        "title": "Contato",
+        "intro": "Tem um projeto ou uma vaga em mente? Me manda uma mensagem e eu respondo por e-mail.",
         "emailAltText": "caixa de email",
         "namePlaceholder": "Nome",
-        "nameRequired": "Campo obrigatório.",
-        "emailPlaceholder": "Email",
-        "emailInvalid": "Por favor, insira um email válido.",
+        "nameRequired": "Informe seu nome.",
+        "emailPlaceholder": "E-mail",
+        "emailInvalid": "Informe um e-mail válido, como nome@exemplo.com.",
         "subjectPlaceholder": "Assunto",
-        "subjectRequired": "Campo obrigatório.",
+        "subjectRequired": "Informe o assunto.",
         "messagePlaceholder": "Mensagem",
-        "messageRequired": "Campo obrigatório.",
-        "sendButton": "Enviar"
+        "messageRequired": "Escreva sua mensagem.",
+        "sendButton": "Enviar mensagem",
+        "sending": "Enviando...",
+        "sent": "Mensagem enviada. Obrigado!",
+        "error": "Não foi possível enviar agora. Tente de novo ou escreva para contato@igorlima.dev."
+    },
+    "footer": {
+        "rights": "Igor Lima"
     }
 }

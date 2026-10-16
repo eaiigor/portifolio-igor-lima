@@ -3,46 +3,58 @@
         "about": "About",
         "projects": "Projects",
         "experience": "Experience",
-        "contact": "Contact"
+        "contact": "Contact",
+        "menu": "Menu",
+        "switchLanguage": "Switch language to Portuguese",
+        "switchTheme": "Toggle light/dark theme",
+        "lang": "PT"
     },
     "hello": {
+        "role": "Full stack developer in São Paulo",
         "phraseOne": "A web developer helping companies bring their ideas to life with technology, expertise, and a bit of coffee. Check out my",
         "phraseTwo": "side projects",
-        "phraseThree": "below."
+        "phraseThree": "below.",
+        "resume": "Resume",
+        "status": "On call at Benner, working on ModernaNet",
+        "vitalsTitle": "Vital signs",
+        "vitalSince": "since January 2022",
+        "vitalCompanies": "Companies",
+        "vitalStack": "Main stack",
+        "contact": "Get in touch",
+        "vitalTime": "Time in the field"
     },
     "about": {
-        "resume": "curriculo",
-        "education": "educacao",
-        "responseEducation": "Análise e Desenvolvimento de Sistemas - UNIS Varginha",
-        "experience": "experiencia",
-        "location": "localizacaoAtual",
-        "interests": "interesses",
-        "responseInterests": "\"Programação web\", \"Café\", \"Tocar instrumentos\", \"Marvel\"",
-        "contact": "informacoesParaContato"
-    },
-    "about": {
-        "resume": "resume",
-        "education": "education",
-        "responseEducation": "Systems Analysis and Development - UNIS Varginha",
-        "experience": "experience",
-        "location": "currentLocation",
-        "interests": "interests",
-        "responseInterests": "\"Web programming\", \"Coffee\", \"Playing instruments\", \"Marvel\"",
-        "contact": "contact"
+        "title": "About",
+        "intro": "I work with Angular on the front end and C# .NET on the back end, maintaining systems that hospitals, schools and companies use every day.",
+        "education": "Education",
+        "responseEducation": "Systems Analysis and Development, UNIS Varginha",
+        "location": "Location",
+        "responseLocation": "São Paulo, Brazil",
+        "interests": "Interests",
+        "responseInterests": "Web programming, coffee, playing instruments and Marvel",
+        "stack": "Stack",
+        "resume": "Download resume (PDF)",
+        "recordTitle": "Medical record",
+        "recordName": "Name",
+        "recordRole": "Specialty",
+        "recordRoleValue": "Full stack development"
     },
     "projects": {
-        "projects": "projects",
+        "projects": "Projects",
         "iflowPhrase": "A streaming system simulator that allows adding movies to a list saved in local storage.",
         "agendaMusicalPhrase": "A digital music agenda that lists all the musical events of the CCBs in the LAMBARI-MG sector.",
-        "code": "Code"
+        "code": "Code",
+        "demo": "View project",
+        "imageAlt": "Project screenshot"
     },
     "experiences": {
-        "title": "experiences",
+        "title": "Experience",
+        "showResponsibilities": "Responsibilities",
         "sinckTab": "Sinck",
         "wakkeTab": "Wakke",
         "sinckPosition": "Developer II",
-        "sinckPeriod": "Jul 2024 - Dez 2024",
-        "sinckCompany": "@ Sinck",
+        "sinckPeriod": "Jul 2024 - Dec 2024",
+        "sinckCompany": "Sinck Soluções",
         "sinckDescription": "Sinck Soluções is a company that partners with Benner Sistemas to offer ERP, HR, and Logistics management solutions for medium to large companies for over 20 years.",
         "responsibilities": "A summary of my responsibilities at the company:",
         "sinckResponsibility1": "Development of new routines for client systems, both in Desktop and web environments, using C# and .NET;",
@@ -53,7 +65,7 @@
         "sinckResponsibility6": "Update and management of Homologation and Production environments;",
         "wakkePosition": "Developer II",
         "wakkePeriod": "Jan 2022 - Jul 2023",
-        "wakkeCompany": "@ Wakke",
+        "wakkeCompany": "Wakke",
         "wakkeDescription": "Wakke = Escolaweb is a complete school management system that has been serving institutions across Brazil for over 14 years. The software includes over 18 integrated modules, including an exclusive app that helps communication between school and family.",
         "wakkeResponsibility1": "Started as a front-end intern, working with Angular to develop responsive screens in Wakke systems;",
         "wakkeResponsibility2": "Hired as Developer I and II, expanded my responsibilities to back-end with C# and .NET in the development of REST APIs and adaptation of database procedures to C# code;",
@@ -63,7 +75,7 @@
         "bennerTab": "Benner",
         "bennerPosition": "Full Stack Developer",
         "bennerPeriod": "Dec 2024 - Present",
-        "bennerCompany": "@ Benner",
+        "bennerCompany": "Benner",
         "bennerDescription": "Benner is a leading provider of technology solutions for the healthcare, legal, ERP, logistics, and HR sectors. I work on the maintenance and development of the hospital system ModernaNet.",
         "bennerResponsibility1": "Maintenance of the hospital management system ModernaNet;",
         "bennerResponsibility2": "Development of new features based on client requirements;",
@@ -72,19 +84,25 @@
         "bennerResponsibility5": "Handling development-related helpdesk tickets;",
         "bennerResponsibility6": "Technical documentation of developed processes;",
         "bennerResponsibility7": "Training and onboarding of new developers into the team;"
-
     },
     "contact": {
-        "title": "contact",
+        "title": "Contact",
+        "intro": "Have a project or a role in mind? Send me a message and I'll reply by email.",
         "emailAltText": "email box",
         "namePlaceholder": "Name",
-        "nameRequired": "This field is required.",
+        "nameRequired": "Enter your name.",
         "emailPlaceholder": "Email",
-        "emailInvalid": "Please enter a valid email.",
+        "emailInvalid": "Enter a valid email, like name@example.com.",
         "subjectPlaceholder": "Subject",
-        "subjectRequired": "This field is required.",
+        "subjectRequired": "Enter a subject.",
         "messagePlaceholder": "Message",
-        "messageRequired": "This field is required.",
-        "sendButton": "Send"
+        "messageRequired": "Write your message.",
+        "sendButton": "Send message",
+        "sending": "Sending...",
+        "sent": "Message sent. Thank you!",
+        "error": "Couldn't send right now. Try again or write to contato@igorlima.dev."
+    },
+    "footer": {
+        "rights": "Igor Lima"
     }
 }

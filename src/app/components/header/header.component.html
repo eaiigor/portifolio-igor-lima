@@ -1,60 +1,43 @@
-<nav
-  class="app-header navbar navbar-expand-lg bg-body-tertiary"
-  [ngClass]="{ scrolled: isScrolled }"
->
-  <div class="container container-fluid">
-    <img
-      src="assets/IL{{ logo }}.png"
-      alt="IL"
-      class="navbar-brand header__logo"
-      (click)="scrollToTop()"
-    />
+<header class="site-header" [class.is-scrolled]="isScrolled">
+  <div class="wrap site-header__bar">
+    <a class="site-header__brand" href="#top" (click)="scrollToTop($event)"><span class="brand-mark" aria-hidden="true"></span>Igor Lima</a>
+
     <button
-      class="navbar-toggler"
+      class="icon-btn site-header__menu-btn"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      [attr.aria-expanded]="menuOpen"
+      aria-controls="site-nav"
+      (click)="menuOpen = !menuOpen"
     >
-      <span class="navbar-toggler-icon"></span>
+      <i class="mdi" [class.mdi-menu]="!menuOpen" [class.mdi-close]="menuOpen" aria-hidden="true"></i>
+      <span class="visually-hidden">{{ 'header.menu' | translate }}</span>
     </button>
-    <div
-      class="collapse navbar-collapse"
-      id="navbarSupportedContent"
-      style="place-content: end"
-    >
-      <ul class="navbar-nav gap-4 mb-2 mb-lg-0">
-        <li (click)="switchLanguage()">
-          <img src="assets/{{ flag }}.svg" alt="country-flag" />
-        </li>
-        <li>
-          <a (click)="scrollTo('about')">{{ "header.about" | translate }}</a>
-        </li>
-        <!-- <li><a (click)="scrollTo('stacks')">Conhecimentos</a></li> -->
-        <li>
-          <a (click)="scrollTo('my-projects')">{{
-            "header.projects" | translate
-          }}</a>
-        </li>
-        <li>
-          <a (click)="scrollTo('experience')">{{
-            "header.experience" | translate
-          }}</a>
-        </li>
-        <li>
-          <a (click)="scrollTo('contact')">{{
-            "header.contact" | translate
-          }}</a>
-        </li>
-        <li>
-          <label class="switch">
-            <input (click)="changeTheme()" type="checkbox" />
-            <span class="slider"></span>
-          </label>
-        </li>
+
+    <nav id="site-nav" class="site-header__nav" [class.is-open]="menuOpen">
+      <ul class="site-header__links">
+        <li><a href="#about" (click)="scrollTo('about', $event)">{{ 'header.about' | translate }}</a></li>
+        <li><a href="#my-projects" (click)="scrollTo('my-projects', $event)">{{ 'header.projects' | translate }}</a></li>
+        <li><a href="#experience" (click)="scrollTo('experience', $event)">{{ 'header.experience' | translate }}</a></li>
+        <li><a href="#contact" (click)="scrollTo('contact', $event)">{{ 'header.contact' | translate }}</a></li>
       </ul>
-    </div>
+
+      <div class="site-header__tools">
+        <button
+          class="icon-btn"
+          type="button"
+          (click)="switchLanguage()"
+          [attr.aria-label]="'header.switchLanguage' | translate"
+        >{{ 'header.lang' | translate }}</button>
+        <button
+          class="icon-btn"
+          type="button"
+          (click)="changeTheme()"
+          [attr.aria-label]="'header.switchTheme' | translate"
+          [attr.aria-pressed]="isDark"
+        >
+          <i class="mdi" [class.mdi-weather-night]="!isDark" [class.mdi-white-balance-sunny]="isDark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
   </div>
-</nav>
+</header>
