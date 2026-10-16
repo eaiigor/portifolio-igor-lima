@@ -76,14 +76,15 @@
         "bennerPosition": "Desenvolvedor Full Stack",
         "bennerPeriod": "Dez 2024 - Atual",
         "bennerCompany": "Benner",
-        "bennerDescription": "A Benner é referência no fornecimento de soluções de tecnologia para o setor de saúde, jurídico, ERP, logística e RH. Participo da sustentação e evolução do sistema hospitalar ModernaNet.",
-        "bennerResponsibility1": "Sustentação do sistema hospitalar ModernaNet;",
-        "bennerResponsibility2": "Criação de novas funcionalidades conforme demandas dos clientes;",
-        "bennerResponsibility3": "Conversão de telas e lógicas do sistema legado Simah (Visual Basic) para o ModernaNet (Javascript e C# .NET);",
-        "bennerResponsibility4": "Correção de bugs identificados em ambiente de homologação e produção;",
-        "bennerResponsibility5": "Atendimento a chamados do helpdesk relacionados ao desenvolvimento;",
-        "bennerResponsibility6": "Documentação técnica dos processos desenvolvidos;",
-        "bennerResponsibility7": "Treinamento e onboarding de novos desenvolvedores na equipe;"
+        "bennerDescription": "A Benner é referência em tecnologia para saúde, jurídico, ERP, logística e RH. Trabalho no ModernaNet, ERP de gestão hospitalar usado por hospitais, clínicas e centros de diagnóstico: atendimento, prontuário eletrônico, faturamento TISS/ANS, financeiro e estoque. Stack: C# .NET, ASP.NET MVC e Web API, Entity Framework, SQL Server, Oracle, JavaScript e Azure DevOps.",
+        "bennerResponsibility1": "Sustentação em produção de ponta a ponta: análise, reprodução, causa raiz e correção mínima e segura, replicada entre releases paralelas;",
+        "bennerResponsibility2": "Faturamento TISS/ANS e integração com operadoras de saúde (guias, autorizações e glosas), incluindo a integração de senha de autorização;",
+        "bennerResponsibility3": "Criação de novas funcionalidades e configurações conforme a necessidade de cada cliente;",
+        "bennerResponsibility4": "Scripts e consultas em SQL Server e Oracle, além de apoio na migração de dados de clientes;",
+        "bennerResponsibility5": "Referência do time para demandas urgentes em produção, investigando no front-end, no back-end e no banco de dados até encontrar a causa;",
+        "bennerResponsibility6": "Conversão de telas e lógicas do sistema legado Simah (Visual Basic) para o ModernaNet (JavaScript e C# .NET);",
+        "bennerResponsibility7": "IA aplicada ao desenvolvimento: Skills para Claude Code e MCP Servers que revisam PRs contra um guideline de cerca de 55 regras e padronizam tarefas do time, com regras de governança para proteger dados sensíveis;",
+        "bennerResponsibility8": "Documentação de correções para o time de QA e treinamento e onboarding de novos desenvolvedores;"
     },
     "contact": {
         "title": "Contato",
