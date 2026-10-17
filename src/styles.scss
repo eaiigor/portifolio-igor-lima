@@ -251,6 +251,14 @@ h3 {
   box-shadow: none;
 }
 
+/* Botão redondo só com ícone (mesma altura dos outros botões) */
+.btn--icon {
+  justify-content: center;
+  width: 3.7rem;
+  padding: 0.8rem 0;
+  font-size: 1.15rem;
+}
+
 .btn--ghost:hover {
   color: var(--accent);
   border-color: var(--accent);
@@ -513,7 +521,7 @@ h3 {
 
 .hero__name {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 500;
   font-size: clamp(3.25rem, 9vw, 6.25rem);
   line-height: 0.98;
   letter-spacing: -0.045em;
@@ -647,7 +655,9 @@ h3 {
 
 .trace--scan {
   stroke: var(--accent);
-  stroke-dasharray: 22 78;
+  /* Um traço de 22 com intervalo de 100: o ciclo (122) é igual ao deslocamento da animação,
+     então o traço sai inteiro pelo fim antes de entrar de novo, sem "pulo" ao reiniciar. */
+  stroke-dasharray: 22 100;
   animation: scan 2.6s linear infinite;
 }
 

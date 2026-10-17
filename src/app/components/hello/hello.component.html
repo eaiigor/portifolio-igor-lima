@@ -12,6 +12,8 @@
       <div class="hero__actions">
         <a class="btn" href="#contact">{{ 'hello.contact' | translate }}</a>
         <a class="btn btn--ghost" href="assets/CV-IGOR-LIMA.pdf" target="_blank" rel="noopener"><i class="mdi mdi-file-document-outline" aria-hidden="true"></i>{{ 'hello.resume' | translate }}</a>
+        <a class="btn btn--ghost btn--icon" href="https://www.linkedin.com/in/igor-rocha-lima/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="mdi mdi-linkedin" aria-hidden="true"></i></a>
+        <a class="btn btn--ghost btn--icon" href="https://github.com/eaiigor" target="_blank" rel="noopener" aria-label="GitHub"><i class="mdi mdi-github" aria-hidden="true"></i></a>
       </div>
     </div>
 
@@ -20,12 +22,12 @@
       <dl class="monitor__vitals">
         <div class="vital vital--wide vital--main">
           <dt>{{ 'hello.vitalTime' | translate }}</dt>
-          <dd>{{ '2022-01' | duration }}</dd>
+          <dd>{{ monthsWorked | duration }}</dd>
           <dd class="vital__note">{{ 'hello.vitalSince' | translate }}</dd>
         </div>
         <div class="vital">
           <dt>{{ 'hello.vitalCompanies' | translate }}</dt>
-          <dd>3</dd>
+          <dd>{{ companies }}</dd>
         </div>
         <div class="vital">
           <dt>{{ 'hello.vitalStack' | translate }}</dt>

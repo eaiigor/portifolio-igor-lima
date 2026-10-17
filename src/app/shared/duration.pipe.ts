@@ -6,14 +6,16 @@ import { TranslateService } from '@ngx-translate/core';
  * Sem data final, conta até o mês atual. Conta os meses de forma inclusiva,
  * como o LinkedIn: jan/2022 a jul/2023 = 1 ano e 7 meses.
  *
- * Uso: {{ '2022-01' | duration }}  ou  {{ job.start | duration: job.end }}
+ * Também aceita um total de meses já calculado.
+ *
+ * Uso: {{ '2022-01' | duration }}  ou  {{ job.start | duration: job.end }}  ou  {{ 47 | duration }}
  */
 @Pipe({ name: 'duration', pure: false })
 export class DurationPipe implements PipeTransform {
   constructor(private translate: TranslateService) {}
 
-  transform(start: string, end?: string | null): string {
-    const total = DurationPipe.months(start, end);
+  transform(start: string | number, end?: string | null): string {
+    const total = typeof start === 'number' ? start : DurationPipe.months(start, end);
     const years = Math.floor(total / 12);
     const months = total % 12;
     const en = (this.translate.currentLang || this.translate.defaultLang) === 'en';
