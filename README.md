@@ -1,27 +1,88 @@
-# PortifolioIgorLima
+<div align="center">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+# Igor Lima · Portfólio
 
-## Development server
+Meu site pessoal, com minha experiência, projetos e currículo.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**[igorlima.dev](https://www.igorlima.dev)**
 
-## Code scaffolding
+[![Angular](https://img.shields.io/badge/Angular-17-dd0031?logo=angular&logoColor=white)](https://angular.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vercel](https://img.shields.io/badge/deploy-Vercel-000?logo=vercel&logoColor=white)](https://www.igorlima.dev)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/desktop-escuro.png">
+  <img src="docs/desktop-claro.png" alt="Página inicial do portfólio no computador" width="820">
+</picture>
 
-## Build
+</div>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Sobre
 
-## Running unit tests
+Sou desenvolvedor full stack .NET e trabalho com C# e SQL no ModernaNet, sistema de gestão para clínicas e hospitais da Benner. Esta é a terceira versão do portfólio, e o visual puxa um pouco desse universo de saúde, de um jeito sutil.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<img src="docs/mobile-escuro.png" alt="Página inicial do portfólio no celular" width="260" align="right">
 
-## Running end-to-end tests
+## Destaques
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Tema claro e escuro, que segue o sistema e lembra a escolha do visitante
+- Português e inglês, com troca na hora
+- Animações suaves que respeitam a opção "reduzir movimento" do sistema
+- Tempo de atuação calculado sozinho a partir das datas de cada emprego
+- Formulário de contato que envia e-mail direto, sem back-end
+- Currículo em PDF para baixar
+- Prévia do link pronta para LinkedIn, WhatsApp e outras redes
+- Layout pensado para celular, tablet e computador
 
-## Further help
+<br clear="right">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tecnologias
+
+| Parte | Ferramentas |
+| --- | --- |
+| Front-end | Angular 17, TypeScript, SCSS |
+| Traduções | ngx-translate |
+| Contato | EmailJS |
+| Avisos | ngx-toastr |
+| Hospedagem | Vercel |
+
+## Como rodar
+
+Precisa do [Node.js](https://nodejs.org) 18.13 ou mais novo.
+
+```bash
+git clone https://github.com/eaiigor/portifolio-igor-lima.git
+cd portifolio-igor-lima
+npm install
+npm start
+```
+
+O site abre em `http://localhost:4200`. Para gerar a versão de produção, use `npm run build`; os arquivos saem em `dist/`.
+
+## Estrutura
+
+```text
+src/
+├── app/
+│   ├── components/   # seções da página: hero, sobre, projetos, experiência, contato
+│   └── shared/
+│       ├── jobs.ts               # lista de empregos (datas, links)
+│       ├── duration.pipe.ts      # calcula o tempo de cada experiência
+│       └── reveal.directive.ts   # faz as seções aparecerem ao rolar
+├── assets/
+│   ├── i18n/         # textos em português (pt.json) e inglês (en.json)
+│   └── CV-IGOR-LIMA.pdf
+└── styles.scss       # cores, fontes e estilos globais
+```
+
+Todo texto do site fica em `src/assets/i18n`. Para mudar uma frase, edite os dois arquivos, `pt.json` e `en.json`.
+
+## Contato
+
+- E-mail: [contato@igorlima.dev](mailto:contato@igorlima.dev)
+- LinkedIn: [igor-rocha-lima](https://www.linkedin.com/in/igor-rocha-lima/)
+- Site: [igorlima.dev](https://www.igorlima.dev)
+
+---
+
+<div align="center">Keep coding . . .</div>
